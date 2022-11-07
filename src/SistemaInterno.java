@@ -2,7 +2,7 @@ public class SistemaInterno {
 
     private int senha = 2222;
 
-    public void autentica(FuncionarioAutentica fa){
+    public void autentica(Autentica fa){
         boolean autenticou = fa.autentica(this.senha);
         if(autenticou){
             System.out.println("Logado");

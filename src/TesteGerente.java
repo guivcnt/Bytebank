@@ -1,6 +1,7 @@
 public class TesteGerente {
     public static void main(String[] args) {
         Gerente g1 = new Gerente();
+        Funcionario gerente = new Gerente();
 
         g1.setNome("Guilherme");
         g1.setCpf("3232313213131");

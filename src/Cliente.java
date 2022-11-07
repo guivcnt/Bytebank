@@ -1,10 +1,9 @@
-public class Administrador extends Funcionario implements Autentica {
+public class Cliente implements Autentica{
     private AutenticacaoUtil autenticador;
 
-    public Administrador(){
+    public Cliente(){
         this.autenticador = new AutenticacaoUtil();
     }
-
     @Override
     public void setSenha(int senha){
         this.autenticador.setSenha(senha);
@@ -12,8 +11,5 @@ public class Administrador extends Funcionario implements Autentica {
     @Override
     public boolean autentica(int senha) {
         return this.autenticador.autentica(senha);
-    }
-    public double getBonificacao(){
-        return 50;
     }
 }

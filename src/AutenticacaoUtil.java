@@ -1,21 +1,14 @@
-public abstract class FuncionarioAutentica extends Funcionario{
+public class AutenticacaoUtil {
     private int senha;
 
-    public int getSenha() {
-        return senha;
-    }
-
-    public void setSenha(int senha) {
+    public void setSenha(int senha){
         this.senha = senha;
     }
-
     public boolean autentica(int senha){
         if(this.senha == senha){
             return true;
-        }
-        else{
+        }else {
             return false;
         }
     }
-
 }
